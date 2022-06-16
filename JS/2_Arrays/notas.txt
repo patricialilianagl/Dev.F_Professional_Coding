@@ -29,5 +29,42 @@ nombre de la variable.length
     se usa de la siguiente forma
     var arrayalumnos = alumnos.split ('/') resultado ('Deyanira'/ 'Cristobal')
 
-7. Slice. Quita una parte del array y eso que se quita lo devuelve en tro array
-    nombredearray.slice(posicion inicial, posicion final);
+7. Slice. Quita una parte del array y eso que se quita lo devuelve en otro array
+    Sintaxis 
+        nombredearray.slice(posicion inicial, posicion final);
+
+Quiero que quite ciertos elementos y retorna lo que nostros le quitamos al array
+
+8. Splice. Agregar o borrar elementos de un array, modifica el areglo original
+    Pide parámetros como el indice y el número de elementos que quiere borrar
+    Sintaxis
+        nombreDeArray.splice(indice,numero de elementos a eliminar, elementos a agregar);
+
+Ejemplos 
+        -No borrando elementos pero agregando elementos
+        console.log(colores.splice(2,0, 'Amarrillo', 'Peru'))
+        indice 2
+        elementos eliminados 0
+        elementos agregados Amarrillo, Peru
+
+        - Borrando elementos
+          console.log(colores.splice(2,1))
+        indice 2
+        elementos eliminados 1 quiero borrar un elemento a partir de la posición 2 a la derecha
+        elementos agregados 0
+
+        console.log(colores.splice(2,1,'rosa'))
+        indice 2
+        elementos eliminados 1 quiero borrar un elemento a partir de la posición 2 a la derecha
+        elementos agregados rosa, se agrega en lugar del elemento que se elimino
+
+9. Sort. Ordena la lista de forma ascendente (A-Z) por defecto
+    Sintaxis para palabras
+        nombreDeArray.Sort();
+    
+    Sintaxis para numeros
+        nombreDeArray.Sort(); Ordena por el primer digito, luego el segundo y así sucesivamente
+    para ordernar los numeros hay que darle una función de ordenamiento al método sort
+        nombreDeArray.Sort(funcion(a,b){return a-b});
+        nombreDeArray.Sort(funcion(a,b)=>{return a-b}); Función anónima, va de numero en número restando
+        

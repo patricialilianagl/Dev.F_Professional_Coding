@@ -80,11 +80,12 @@
 
 // Sintaxis
 // nombreDeArray.slice(posición inicial, posición final);
+// var colores = ['negro', 'verde', 'rojo', 'azul', 'naranja']
 
 // console.log(colores);
-// var quitarColores = colores.slice(2);
-// var quitarColores = colores.slice(2,4);
-// var quitarColores = colores.slice(3);
+// var quitarColores = colores.slice(2); Respuesta = rojo, azul, naranja
+// var quitarColores = colores.slice(2,4); Respuesta = rojo, azul
+// var quitarColores = colores.slice(3); Respuesta = azul, naranja
 // console.log(colores);
 // console.log(quitarColores);
 
@@ -97,18 +98,18 @@
 // No borrando elementos, pero agregando elementos
 
 // console.log(colores);
-// console.log(colores.splice(2,0,'Amarillo','Peru'));
+// console.log(colores.splice(2,0,'Amarillo','Peru')); Resultado: negro, verde, Amarrillo, Peru, rojo, azul, naranja
 // console.log(colores);
 
 // Borrando elementos
 
 // console.log(colores);
-// console.log(colores.splice(2,1));
+// console.log(colores.splice(2,1)); Resultado: negro, verde, azul, naranja Elimino el rojo
 // console.log(colores);
 
 // Borrando un elemento y agregando un elemento
 // console.log(colores);
-// console.log(colores.splice(2,3,'rosa'));
+// console.log(colores.splice(2,3,'rosa')); Resultado: negro, verde, rosa, azul, naranja
 // console.log(colores);
 
 // Sort
