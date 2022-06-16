@@ -1,0 +1,33 @@
+Arreglos o matrices Son una manera ordenada de almacenar una lista de elementos de datos bajpo un solo nombre de variable, pudiendo accede a cada elemento indivudual de la lista
+se decalara una varibale y el array se representa con [] ahi va todo lo que queremos separado con una coma escrito entre ''
+acceder a los elementos del array se utiliza la posición que es un indice, los arrays siempre comienzan desde cero 0 
+ejemplo var frutas = ['Pera', 'Manzana', 'Platano', 'Naranja']
+Quiero acceder a platano entonces escribo frutas[2]
+Modificar un valor de un arreglo colocando el nombre del arreglo [] dentro la posición que se quiere moficiar = y el nuevo valor, es decir,
+frutas[3] = 'uva' y quedara var frutas = ['Pera', 'Manzana', 'Platano', 'Uva']
+
+Los métodos ayudan a manipular los arrays
+
+1. length. Devuelve el número total de elementos de un arreglo ¿Cuantos elementos tengo en mi arreglo?
+nombre de la variable.length
+
+2. push. Ayuda a agregar un elemento al final del array
+    nombrevariable.push("elemento")
+    
+3. pop. Elimina el elemento que se encuentra al final del array
+    nombrevariable.pop() no se necesita indicar nada, en los parentesis no hay nada
+
+4. Unshift. Agrega un elemento al principio de la lista
+    variable.Unshift("Elemento que se quiere agregar")
+
+5. Shift. Elimina el elemento que esta al principio del array
+    variable.shift() No se necesita indicar nada, en los parentesis no hay nada
+
+6. Split. Divide una cadena (string) en una matrix de subcadenas, tomando como referencia donde se sncuentre un carácter indicado
+    variable nombredevarianle = String ('Deyanira', 'Cristobal')
+    
+    se usa de la siguiente forma
+    var arrayalumnos = alumnos.split ('/') resultado ('Deyanira'/ 'Cristobal')
+
+7. Slice. Quita una parte del array y eso que se quita lo devuelve en tro array
+    nombredearray.slice(posicion inicial, posicion final);
