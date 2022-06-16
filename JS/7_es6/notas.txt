@@ -1,0 +1,20 @@
+Map 
+
+el método map permite iterar o convertir un arreglo en otro, tranforma los Arreglos
+utiliza funciones transformadoras para cambiar el array 
+map transforma todos los elementos
+
+filter
+El método filtes recorre y crea un nuevo arreglo solo con los elementos que cumplan una condición
+Tiene la capacidad de buscar en un arreglo y crear ptrp cpn el resultado de la búesqueda
+    función donde lo que me retorna es >5 (es mi condición)
+        let test = value => value > 5;
+
+Nos ayuda a filtrar uno o más elementos de un array basandose en alguna condición
+No modifica el arreglo original, nos trae un nuevo arreglo
+1. Declaramos la función
+2. Creamos la constante o función con su parametro
+3. Crear otra variable con filter
+4. console.log para ver en consola
+
+se puede usar const porque es una función que no va a cambiar
