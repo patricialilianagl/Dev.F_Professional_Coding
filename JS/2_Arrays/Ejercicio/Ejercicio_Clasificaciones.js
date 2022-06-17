@@ -17,7 +17,22 @@ clasificaciones[3] = 'Raúl';
 console.log(clasificaciones);
 /*
 2- Antonio es descalificado y se elimina del concurso
+*/
+clasificaciones.pop();
+console.log(clasificaciones);
+/*
 3- Detrás de Ana y antes de Oswaldo se clasifican dos nuevos concursantes: Roberto y Amaya, en ese orden
+*/
+clasificaciones.splice(1,0, 'Roberto');
+console.log(clasificaciones);
+
+clasificaciones.splice(2,0,'Amaya')
+console.log(clasificaciones);
+/*
 4- Hay una nueva participante que pasa a encabezar la clasificación: Marta	
+*/
+clasificaciones.unshift('Marta');
+console.log(clasificaciones);
+/*
 5- Imprime la clasificación actualizada y comprueba que se ha hecho correctamente
 */
