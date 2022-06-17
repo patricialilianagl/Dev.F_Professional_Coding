@@ -67,4 +67,25 @@ Ejemplos
     para ordernar los numeros hay que darle una función de ordenamiento al método sort
         nombreDeArray.Sort(funcion(a,b){return a-b});
         nombreDeArray.Sort(funcion(a,b)=>{return a-b}); Función anónima, va de numero en número restando
-        
+
+    Cuando ordenamos strings con mayusculas y minusculas
+        var nombredevariable =[Conjunto del array, nombres en mayusculas y minusculas]
+        nombreDeArray.sort(); los ordena primero de A-Z en mayusculas y luego de la a-z minusculas
+        Se puede usar otra función de ordenamiento
+        nombreDeArray.sort((a,b)=>{
+        if(a.toLowerCase() < b.toLowerCase()) return -1
+        if(a.toLowerCase() > b.toLowerCase()) return 1
+        return 0
+        });
+
+
+10. Reverse. Coloca los elementos del arreglo al Reves 
+    Sintaxis
+    nombreDeArray.reverse(); 
+
+11. Concat. Une o concatena el contenido de dos arreglos existentes.
+    Sintaxis
+    var nombredevariable = [Contenido del array o arreglo]
+    var nombredevariable2 = [Contenido del segundo arreglo]
+
+    var nombredevariableunion = [Nombre del primer arreglo que queremos que se concatene 'nombredevariable.concat(nombredevariable2);']

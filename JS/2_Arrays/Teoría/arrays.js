@@ -131,7 +131,7 @@ var verduras =['Cebolla', 'Brocoli', 'Papas', 'Col', 'Zanahoria']
 // numeros.sort();
 // numeros.sort((a,b)=>{return a-b});
 // 5,14 -> 5-14 = -9 por lo tanto, mi elemento a (5) se situara en un indice menor a mi elemento b (14) => 5,14
-// 14,7 -> 14-7 = 7 por lo tanto, mie elemtento b (7) se situara en un indice menor a mi elelento a (14) =>7,14
+// 14,7 -> 14-7 = 7 por lo tanto, mi elemtento b (7) se situara en un indice menor a mi elelento a (14) =>7,14
 // console.log(numeros);
 
 // Cuando ordenamos strings con mayusculas y minusculas
