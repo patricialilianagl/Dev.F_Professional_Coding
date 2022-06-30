@@ -1,0 +1,96 @@
+JavaScript
+Hace que las páginas web sean más dinámicas e interactivas
+Fue diseñado con el propósito  de que se pueda agregar interactividad a tu sitio web
+Com JS se pueden escribir fuciones. llamadas event handlers (manejadores de eventos) y hacer que éstas se activen empleando atributos HTML
+atributo o evento
+    - onclick = "función();" una función viene con los parentesis
+
+DOM. Document Object Model, Trabajar con html y JavaScript
+CSS CSS Object Model
+los navegadores hacen el Critical Rendering Path, hace que la pagina we se convierta en pixeles en la pantalla del usuario, para que el código se comunique con HTML y CSS
+
+Se ejecuta el DOM, luego el CSSOM, luego Render Tree que es la jerarquía o ramificación, layout que es lo que muestra en nuestras pantallas, paint
+
+El DOM de un HTML  es un modelo de objetos estándar y una interfaz de programación para HTML. 
+INTERFAZ es un puente de comunicación 
+Este define:
+    - los elementos de HTML trabajen como objetos
+    - Las propiedades de todos los elementos HTML
+    - Los métodos para acceder a todos los elementos de HTML
+    - Los eventos para todos los elementos de HTML
+¿como funciona?
+    Es la representación que hace el navegador de un documento de HTML
+
+Mediante el DOM el documento de HTML se ocnvierte en una estructura de árbol, jerarquizada por 
+    - HTML
+    - Head, body
+    - Title, h1, p (nodos)
+    - text, code
+
+Cuando termina el navegador de convertirlo al DOm ocurre el evento DOMContentLoaded y a partir de este putno tenemos la garantía de que todo muestro documento se ha cargado
+
+window hace referencia a la ventana de nuestro usuario, es un objeto y se puede agregar eventos
+addEventListener es para añadir eventos a un HTMl como animación, Fullscreen, Gamepad, Gestures
+    recibe dos parametros 
+        1. evento. DOMContentLoaded
+        2. Función. () => {
+            alert("Tu documento se ha cargado correctamente")
+        }
+Scrip Externos o embebidos
+
+Todo script que carguemos en nuestra página tiene un LLAMADO y una EJECUCIÓN
+
+Hay que agregar nuestra etiqueta <script> antes de cerrar <body>
+Cuando el DOM se esta cargando primero se ejecuta HTML y luego JS
+    Elemento. Son los input, p, 
+    Atributos. Caracteristicas que tiene los elementos 
+
+nodos
+Es un objeto que devuelve un conjunto de nodos, se parece a un array (una lista ordenada de datos) pero no lo es
+
+los NodeList son colecciones dinámicas cuyo contenido se actualiza
+
+Leer nodos
+    document.getElementById trae nodos y lo inserta en una variable con todo su etiqueta, atributo, todo lo que se ve en HTML
+    document.getElementsByTagName información de una etiqueta en especifico, clase, contenido, 
+    document.getElementsByClassName
+
+    las clases se pueden usar varias veces
+    las id solo una vez en el documento lo s nodos se llevan mejor con los ordena
+
+document.querySelectorElement funciona a como interactuamos con CSS .clase #id
+document.querySelector('Elemento') trae un elemento, el primero que enciuntre y cumpla con elemento pedido
+document.querySelectorAll('Elemento') trae a todos se utiliza cuando son clases porque las id generalmente no se repiten
+Se usan por id o por clase
+
+Cualquiera de los dos se puede utilizar
+nodo es el nombre con el que se guardo la información
+    nodo.outerHTML (Leer)
+    nodo.innerHTML = "Cambio texto en JS y ya no aparce el de HTML" (escribir)
+
+Diferencia entre nodeList y array
+    nodeList. Es un tipo de dato, carece de operaciones que los arrays si tienen como map, filter, reverse. 
+                pero se pueden convertir en arreglos inicializandolo en var o const igualamos= a corchetes[]
+                sintaxis para convertir NodeList a Array
+                    var/ const Nombredelavariable NodeList = [...nombredelnodo] lo muestra como arreglo y hace una copia ddel nodeList
+                cuando se tiene el nodelist en un arreglo ya se puede usar el map o filter
+    Array. Funciones como map, filter, reverse, 
+
+Biblias del desarrollo web
+¿Como lo uso? developer.mozilla.org
+¿Puedo usarlo? caniuse.coma depende de los navegadores, no todos los navegadores soportan la información
+
+Ejercicio
+imagen
+nombre
+precio
+cantidad
+descripción
+mL
+botones
+
+padding espacio
+display arreglo en la pantalla
+font-size tamaño letra
+font weight negrita 
+margin bot
