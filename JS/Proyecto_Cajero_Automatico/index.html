@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport"content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="./estilos.css" />
+    <title>Cajero Automático</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Cajero Automático</h1> 
+      <h2>Bienvenidos</h2>
+    </header>
+
+    <div class="container-fluid" style="height: 100vh" id="view-login">
+      <form>
+         <div class="form-group">
+          <label for="usuario">Usuario</label>
+          <input name="usuario" class="form-control" id="user"/>
+          </div>
+          <div class="form-group">
+            <label for="contrasena">Contraseña</label>
+            <input
+                type="contrasena"
+                name="contrasena"
+                class="form-control"
+                id="contrasena"
+              />
+            </div>
+            <button type="button" class="btn btn-primary" id="btn-iniciar">
+              Iniciar sesión
+            </button>
+       </form>
+    </div>
+  
+    <div id="view-index">
+      <nav class="navbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="nav-saldo">Saldo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="nav-retiro">Retiro</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="nav-abono">Abono</a>
+          </li>
+          <button type="button" class="btn btn-info" id="btn-cerrar">
+            Cerrar sesión
+          </button>
+        </ul>
+      </nav>
+      <div class="container">
+        <div id="cliente"></div>
+        <p>.</p>
+      </div>
+    </div>
+
+    <div class="container" id="view-saldo">
+      <h3 class="text-black" id="miSaldo"></h3>
+    </div>
+    <div class="container" id="view-abono">
+      <div class="form-group">
+        <label for="n-abono">Cantidad</label>
+        <input name="n-abono" id="cantidad-abono" />
+      </div>
+      <button type="button" class="btn btn-success" id="btn-abonar">
+        Abonar
+      </button>
+    </div>
+    <div class="container" id="view-retiro">
+      <div class="form-group">
+        <label for="n-abono">Cantidad</label>
+        <input name="n-retiro" id="cantidad-retiro" />
+      </div>
+      <button type="button" class="btn btn-danger" id="btn-retirar">
+        Retirar
+      </button>
+    </div>
+    <div class="container" id="view-new-saldo">
+      <h3 class="text-black" id="newSaldo"></h3>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>

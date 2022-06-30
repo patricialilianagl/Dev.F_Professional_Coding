@@ -1,0 +1,28 @@
+h1{
+  display: flex;
+  justify-content: center;
+}
+
+h2{
+  display: flex;
+  justify-content: center;
+}
+
+p{
+  display: flex;
+  justify-content: center; 
+}
+
+.container-fluid{
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-nav{
+  list-style: none;
+  align-items: center;
+}
+
+.btn{
+  justify-content: center;
+}
